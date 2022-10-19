@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+
+    <style>
+        p::first-letter{
+            color: #00d8c9;
+            font-size: xx-large;
+            font-weight: 500;
+        }
+
+        /* ::before */
+        h2::after{
+            content: "World !!";
+            color: #00d8c9;
+        }
+ 
+        ::selection{
+            color: white;
+            background: #00d8c9;
+        }
+        
+        .text::first-line{
+            color: #00d8c9;
+            font-variant: small-caps;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Useful Pseudo-Elements You Should Know! -->
+
+    <!-- ::First-Letter -->
+    <p>Hello Devs🕷️</p>
+
+    <!-- ::after -->
+    <h2>Hello</h2>
+
+    <!-- ::Selection -->
+    <h2>Select some text!!</h2>
+   <!-- ::First-Line -->
+
+   <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+
+</body>
+</html>
